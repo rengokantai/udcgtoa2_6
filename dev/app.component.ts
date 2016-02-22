@@ -1,12 +1,12 @@
 import {Component} from 'angular2/core';
-import {TemplateFormComponent} from "./tempform.component";
+import {DataFormComponent} from "./dataform.component";
 //pass [myname] from parent component to child component.child component receive data from [input]
 @Component({
     selector: 'my-app',
     template:`
-<temp-form></temp-form>
+<data-form></data-form>
     `,
-    directives:[TemplateFormComponent]
+    directives:[DataFormComponent]
 })
 export class AppComponent {
 

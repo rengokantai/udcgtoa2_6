@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./tempform.component"], function(exports_1) {
+System.register(['angular2/core', "./dataform.component"], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,15 +8,15 @@ System.register(['angular2/core', "./tempform.component"], function(exports_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, tempform_component_1;
+    var core_1, dataform_component_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (tempform_component_1_1) {
-                tempform_component_1 = tempform_component_1_1;
+            function (dataform_component_1_1) {
+                dataform_component_1 = dataform_component_1_1;
             }],
         execute: function() {
             //pass [myname] from parent component to child component.child component receive data from [input]
@@ -26,8 +26,8 @@ System.register(['angular2/core', "./tempform.component"], function(exports_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n<temp-form></temp-form>\n    ",
-                        directives: [tempform_component_1.TemplateFormComponent]
+                        template: "\n<data-form></data-form>\n    ",
+                        directives: [dataform_component_1.DataFormComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
@@ -38,4 +38,4 @@ System.register(['angular2/core', "./tempform.component"], function(exports_1) {
     }
 });
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQudHMiXSwibmFtZXMiOlsiQXBwQ29tcG9uZW50IiwiQXBwQ29tcG9uZW50LmNvbnN0cnVjdG9yIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFFQSxrR0FBa0c7WUFDbEc7Z0JBQUFBO2dCQVNBQyxDQUFDQTtnQkFUREQ7b0JBQUNBLGdCQUFTQSxDQUFDQTt3QkFDUEEsUUFBUUEsRUFBRUEsUUFBUUE7d0JBQ2xCQSxRQUFRQSxFQUFDQSxpQ0FFUkE7d0JBQ0RBLFVBQVVBLEVBQUNBLENBQUNBLDBDQUFxQkEsQ0FBQ0E7cUJBQ3JDQSxDQUFDQTs7aUNBR0RBO2dCQUFEQSxtQkFBQ0E7WUFBREEsQ0FUQSxBQVNDQSxJQUFBO1lBVEQsdUNBU0MsQ0FBQSIsImZpbGUiOiJhcHAuY29tcG9uZW50LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtDb21wb25lbnR9IGZyb20gJ2FuZ3VsYXIyL2NvcmUnO1xyXG5pbXBvcnQge1RlbXBsYXRlRm9ybUNvbXBvbmVudH0gZnJvbSBcIi4vdGVtcGZvcm0uY29tcG9uZW50XCI7XHJcbi8vcGFzcyBbbXluYW1lXSBmcm9tIHBhcmVudCBjb21wb25lbnQgdG8gY2hpbGQgY29tcG9uZW50LmNoaWxkIGNvbXBvbmVudCByZWNlaXZlIGRhdGEgZnJvbSBbaW5wdXRdXHJcbkBDb21wb25lbnQoe1xyXG4gICAgc2VsZWN0b3I6ICdteS1hcHAnLFxyXG4gICAgdGVtcGxhdGU6YFxyXG48dGVtcC1mb3JtPjwvdGVtcC1mb3JtPlxyXG4gICAgYCxcclxuICAgIGRpcmVjdGl2ZXM6W1RlbXBsYXRlRm9ybUNvbXBvbmVudF1cclxufSlcclxuZXhwb3J0IGNsYXNzIEFwcENvbXBvbmVudCB7XHJcblxyXG59Il0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQudHMiXSwibmFtZXMiOlsiQXBwQ29tcG9uZW50IiwiQXBwQ29tcG9uZW50LmNvbnN0cnVjdG9yIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFFQSxrR0FBa0c7WUFDbEc7Z0JBQUFBO2dCQVNBQyxDQUFDQTtnQkFUREQ7b0JBQUNBLGdCQUFTQSxDQUFDQTt3QkFDUEEsUUFBUUEsRUFBRUEsUUFBUUE7d0JBQ2xCQSxRQUFRQSxFQUFDQSxpQ0FFUkE7d0JBQ0RBLFVBQVVBLEVBQUNBLENBQUNBLHNDQUFpQkEsQ0FBQ0E7cUJBQ2pDQSxDQUFDQTs7aUNBR0RBO2dCQUFEQSxtQkFBQ0E7WUFBREEsQ0FUQSxBQVNDQSxJQUFBO1lBVEQsdUNBU0MsQ0FBQSIsImZpbGUiOiJhcHAuY29tcG9uZW50LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtDb21wb25lbnR9IGZyb20gJ2FuZ3VsYXIyL2NvcmUnO1xyXG5pbXBvcnQge0RhdGFGb3JtQ29tcG9uZW50fSBmcm9tIFwiLi9kYXRhZm9ybS5jb21wb25lbnRcIjtcclxuLy9wYXNzIFtteW5hbWVdIGZyb20gcGFyZW50IGNvbXBvbmVudCB0byBjaGlsZCBjb21wb25lbnQuY2hpbGQgY29tcG9uZW50IHJlY2VpdmUgZGF0YSBmcm9tIFtpbnB1dF1cclxuQENvbXBvbmVudCh7XHJcbiAgICBzZWxlY3RvcjogJ215LWFwcCcsXHJcbiAgICB0ZW1wbGF0ZTpgXHJcbjxkYXRhLWZvcm0+PC9kYXRhLWZvcm0+XHJcbiAgICBgLFxyXG4gICAgZGlyZWN0aXZlczpbRGF0YUZvcm1Db21wb25lbnRdXHJcbn0pXHJcbmV4cG9ydCBjbGFzcyBBcHBDb21wb25lbnQge1xyXG5cclxufSJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==
