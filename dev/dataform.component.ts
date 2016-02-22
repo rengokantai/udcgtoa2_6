@@ -9,14 +9,14 @@ import {FormBuilder,ControlGroup,Validators} from 'angular2/common';
     template:`
     <form [ngFormModel]="mForm"(ngSubmit)="onSubmit()">
     <label for="mail">mail</label>
-    <input [ngFormControl]="mForm.controls['mail']" type="text" id="mail">
-    <span class="error" >not valid</span>
+    <input [ngFormControl]="mForm.controls['mail']" type="text" id="mail" #mail="ngForm">
+    <span class="error" *ngIf="!mail.valid" >not valid</span>
         <label for="password">pass</label>
-    <input [ngFormControl]="mForm.controls['password']"  type="text" id="password" >
-     <span class="error" >not valid</span>
+    <input [ngFormControl]="mForm.controls['password']"  type="text" id="password" #password="ngForm" >
+     <span class="error" *ngIf="!password.valid"  >not valid</span>
         <label for="cpassword">confirm</label>
-    <input  [ngFormControl]="mForm.controls['cpassword']" type="text" id="cpassword">
-     <span class="error" >not valid</span>
+    <input  [ngFormControl]="mForm.controls['cpassword']" type="text" id="cpassword" #cpassword="ngForm">
+     <span class="error" *ngIf="!cpassword.valid" >not valid</span>
     <button type="submit" >submit</button>
     </form>
     {{user.mail}}{{user.password}}
@@ -37,6 +37,7 @@ export class DataFormComponent implements OnInit{
         });
     }
     onSubmit(form) {
-        console.log(this.mForm);
+        //console.log(this.mForm);
+        this.user=this.mForm.value;
     }
 }
